@@ -13,7 +13,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 import rakBankImg from './assets/rakbank.png';
 import { STATUS } from './constants'
-import * as pageActions from './actions/activationActions';
+import * as pageActions from './store/actions/activationActions';
 import { getActivationPending, isActivated } from './store/selectors/selectors';
 
 class App extends Component {

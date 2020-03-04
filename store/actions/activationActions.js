@@ -1,4 +1,4 @@
-import { ACTIVATION_ON_SUCCESS, ACTIVATION_IN_PENDING, API_URL, TOKEN } from '../constants';
+import { ACTIVATION_ON_SUCCESS, ACTIVATION_IN_PENDING, API_URL, TOKEN } from '../../constants';
 
 export function setPageList() {
     return {
