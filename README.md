@@ -20,6 +20,6 @@ To install the library to your react-native project run the following commands:
 
 
 # Result:-
-![Activate State](https://github.com/VinVinay/-React-Native-fetching-data-from-an-api-using-react-redux-using-thunk/blob/master/screenshots/Activate.png){:height="500px" width="200px"}
+![Activate State](https://github.com/VinVinay/-React-Native-fetching-data-from-an-api-using-react-redux-using-thunk/blob/master/screenshots/Activate.png)
 ![Waiting State](https://github.com/VinVinay/-React-Native-fetching-data-from-an-api-using-react-redux-using-thunk/blob/master/screenshots/Waiting.png)
 ![Activated State](https://github.com/VinVinay/-React-Native-fetching-data-from-an-api-using-react-redux-using-thunk/blob/master/screenshots/Activated.png)
