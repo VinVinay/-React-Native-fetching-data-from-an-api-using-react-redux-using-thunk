@@ -1,4 +1,4 @@
-import { ACTIVATION_ON_SUCCESS, ACTIVATION_IN_PENDING } from '../constants';
+import { ACTIVATION_ON_SUCCESS, ACTIVATION_IN_PENDING, API_URL } from '../constants';
 
 export function setPageList() {
     return {
@@ -11,16 +11,16 @@ export function fetchActivationPending() {
         type: ACTIVATION_IN_PENDING,
     };
 }
-
 export function getPageList() {
     var dataObj = {
         "productId": "82jqp008d2l00",
         "emirate": "Abu Dhabi"
       };
 
+
     return async dispatch => {
         dispatch(fetchActivationPending());
-        await fetch('http://dummy.restapiexample.com/api/v1/employees', {
+        await fetch(API_URL, {
             method: 'post',
             headers: {
                 'Accept': 'application/json, text/plain, */*', 
@@ -29,7 +29,7 @@ export function getPageList() {
             },
             body: JSON.stringify(dataObj)
         })
-            .then(res => res.json())
+            // .then(res => res.json())
             .then(res => {
                 if (res.error) {
                     throw (res.error);
