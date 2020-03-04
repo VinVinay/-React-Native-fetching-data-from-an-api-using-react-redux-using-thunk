@@ -1,4 +1,4 @@
-import { ACTIVATION_ON_SUCCESS, ACTIVATION_IN_PENDING, API_URL } from '../constants';
+import { ACTIVATION_ON_SUCCESS, ACTIVATION_IN_PENDING, API_URL, TOKEN } from '../constants';
 
 export function setPageList() {
     return {
@@ -25,7 +25,7 @@ export function getPageList() {
             headers: {
                 'Accept': 'application/json, text/plain, */*', 
                 'Content-Type': 'application/json',
-                'Authorization': 'Basic eyJhbGciOiJIUzI1NiIsInR5cCpXVCJ9.eyJzdWIiOiJkZW1vdXNlcjEiLCJuYW1lIjoiUkFLQkFOSyBEZW1vIiwiaWF0IjoxNTE2MjM5MDIyfQ.hD2So1Jms00c7XB_bxNIrTgvSqMesmrlc0FkBAdY6rM'
+                'Authorization': TOKEN
             },
             body: JSON.stringify(dataObj)
         })
